@@ -4,7 +4,7 @@
 
 module Crates
 
-using ..LibSDL2
+using SimpleDirectMediaLayer.LibSDL2
 using FileIO: load, save, loadstreaming
 using LibSndFile
 
@@ -19,5 +19,6 @@ include("audio.jl")
 include("music.jl")
 
 ###################################################### FUNCTIONS ###################################################### 
+
 
 end # module
