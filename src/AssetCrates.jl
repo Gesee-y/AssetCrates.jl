@@ -2,7 +2,7 @@
 ################################################# CRATE ASSET IMPORTER ################################################
 #######################################################################################################################
 
-module Crates
+module AssetCrates
 
 using SimpleDirectMediaLayer.LibSDL2
 using FileIO: load, save, loadstreaming
@@ -22,3 +22,4 @@ include("music.jl")
 
 
 end # module
+
