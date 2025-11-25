@@ -1,7 +1,7 @@
 name = "AssetCrates"
 uuid = "d8559f7b-85bf-40b2-8b45-fabe493c1faa"
 authors = ["Kaptue Elisee"]
-version = "0.5.0"
+version = "0.5.1"
 
 [deps]
 FileIO = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
