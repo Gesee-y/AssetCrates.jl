@@ -2,10 +2,21 @@
 #################################################### CRATE INTERFACE ##################################################
 #######################################################################################################################
 
-export Load, Destroy
+export Load, Destroy, getmanager, @crate
 
+const JOIN_SYMBOL = '|'
 #######################################################################################################################
 
+
+macro crate(expr,args...)
+    path_data = split(expr.args[1], JOIN_SYMBOL)
+    path = joinpath(path_data...)
+    T = expr.args[2]
+
+    return :(Load!(getmanager(), $T, $path, ($args)...))
+end
+
+getmanager() = nothing
 """
     Load(T::Type{AbstractCrate}, args...)
 
